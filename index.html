@@ -96,12 +96,12 @@
         <div class="col-12 col-lg-7 sale">
           <div class="about_movie">
             <ul class="movies">
-              <button class="movies_title bg_red " href="">
+              <button class="movies_title movie_a" href="">
                 <li>
                   現正熱映
                 </li>
               </button>
-              <button class="movies_title bg_blue" href="">
+              <button class="movies_title " href="">
                 <li>
                   即將上映
                 </li>
@@ -436,12 +436,11 @@
             <div class="map_content">
               <div class="map_phone">
                 <h2>電話 :</h2>
-                <br>
+         
                 <p>(04)22319111</p>
               </div>
               <div class="map_address">
                 <h2>地址 :</h2>
-                <br>
                 <p>台中市北區北屯路14-2號</p>
               </div>
 
@@ -449,11 +448,11 @@
 
                 <div class="map_news_title">
                   <h2>交通資訊 :</h2>
-                  <br>
+          
                   <p class="map_news_text">大眾運輸</p>
-                  <br>
+        
                   <p class="map_text">搭乘公車的朋友們，請在</p>
-                  <br>
+      
                   <p>「監理站」下車</p>
 
                 </div>
@@ -784,6 +783,7 @@
     function clear() {
       for (let i = 0; i < movies_title.length; i++) {
         const movies_title_clear = movies_title[i];
+        movies_title[i].classList.remove("movie_a");
         movie_live[i].classList.remove("show");
       }
     }
@@ -791,6 +791,7 @@
       const movies_add = movies_title[i];
       movies_add.onclick = function () {
         clear();
+        movies_title[i].classList.add("movie_a");
         movie_live[i].classList.add("show");
       }
     }
