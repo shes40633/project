@@ -7,6 +7,7 @@ body {
   position: relative;
   height: 100%;
 }
+
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -372,7 +373,7 @@ td {
   margin: 0;
 }
 .form {
-  margin-left: 110px;
+  text-align: center;
 }
 .search {
   border: 1px solid #d1d1d1;
@@ -405,6 +406,7 @@ td {
 }
 .about_theater_content{
   overflow: hidden;
+  flex-wrap:wrap;
 }
 .about_theater_title {
   font-size: 36px;
@@ -504,7 +506,7 @@ td {
 
 /* 業務專區 */
 .section6{
-  background-color: #1D59A8;
+  background-color: #34558b;
   padding-bottom: 72px;
 }
 .business_title {
@@ -515,12 +517,25 @@ td {
   display: flex;
   justify-content: center;
 }
+.card_text{
+  background-color: #34558b;
+}
+.card-deck{
+  margin: auto;
+}
 .card-title {
   text-align: center;
+  color:white;
+  border:1px solid black;
 }
 .card img {
   height: 400px;
 }
+
+.card-text{
+  color:white;
+}
+
 
 /* footer */
 footer {
@@ -595,6 +610,9 @@ height: 100px;
   }
   .submit {
   margin-top: 50px;
+  }
+  .map iframe{
+    width: 600px;
   }
 }
 @media (max-width: 1024px) {
@@ -736,6 +754,9 @@ height: 100px;
   }
 }
 @media (max-width: 670px) {
+  body{
+    overflow-x: hidden;
+  }
   nav .logo {
     width: 30px;
   }
@@ -749,4 +770,37 @@ height: 100px;
   .footer_text{
     padding: 0;
   }
+  .dis-no{
+    display: none;
+  }
+  .img_size{
+    width: 150px;
+    height: 160px;
+  }
+
+
+}
+@media (max-width: 576px) {
+  .card_text{
+    width:350px;
+    height:200px;
+    }
+  .card_ma{
+    margin-top:120px;
+  }
+
+}
+@media (max-width: 490px) {
+  .map{
+    position: relative;
+  }
+.map iframe{
+  width: 400px;
+}
+.map_address{
+  margin: 0;
+}
+.map_news{
+  margin: 0;
+}
 }
