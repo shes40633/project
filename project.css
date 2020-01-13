@@ -371,7 +371,7 @@ td {
 .search-movie {
   height: 601px;
   background-color: #2958A7;
-  margin-top: 82px;
+  margin-top: 72px;
   margin-bottom: 36px;
 }
 .search-movie_title {
@@ -426,7 +426,7 @@ td {
 .about_theater_title {
   font-size: 36px;
   line-height: 36px;
-  color: black;
+  color: rgb(245, 185, 22);
   padding-top: 36px;
   display: flex;
   justify-content: center;
@@ -447,11 +447,12 @@ td {
 }
 .media-body h5 {
   line-height: 28px;
-  color: rgb(205, 195, 50);
+  color: rgb(212, 209, 41);
 }
 .media-body p {
   line-height: 18px;
   font-size: 18px;
+  color:#f3faf2;
 }
 
 /* 交通資訊 */
@@ -527,7 +528,7 @@ td {
 .business_title {
   font-size: 36px;
   line-height: 36px;
-  color: black;
+  color: #9ee897;
   padding-top: 36px;
   display: flex;
   justify-content: center;

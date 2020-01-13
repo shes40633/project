@@ -27,11 +27,11 @@
 
         <div class="navbur">
           <ul class="nav-content">
-            <li><a href="">關於電影</a></li>
-            <li><a href="">票價資訊</a></li>
-            <li><a href="">關於親親</a></li>
-            <li><a href="">交通資訊</a></li>
-            <li><a href="">哈拉麵包</a></li>
+            <li><a href="#movie">關於電影</a></li>
+            <li><a href="#ticket">票價資訊</a></li>
+            <li><a href="#about">關於親親</a></li>
+            <li><a href="#map">交通資訊</a></li>
+            <li><a href="#business_title">業務專區</a></li>
           </ul>
         </div>
         <div class="mobile_nav_toggle">
@@ -54,7 +54,7 @@
               <a href="">交通資訊</a>
             </li>
             <li>
-              <a href="">哈拉麵包</a>
+              <a href="#business_title">業務專區</a>
             </li>
           </ul>
         </div>
@@ -83,7 +83,7 @@
 
 
 
-  <section class=section2>
+  <section class=section2 id="movie">
 
     <div class="container">
 
@@ -242,7 +242,7 @@
 
 
   <!-- 票價資訊 -->
-  <Section class="section3">
+  <Section class="section3" id="ticket">
     <div class="container">
 
 
@@ -341,7 +341,7 @@
 
   <!-- 關於親親 -->
 
-  <section class="section4">
+  <section class="section4" id="about">
     <div class="container">
       <div class="row">
         <div class="col-12  about_theater_bg">
@@ -416,7 +416,7 @@
   </section>
 
 
-  <section class="section5">
+  <section class="section5" id="map">
 
     <div class="container">
       <div class="row">
@@ -495,7 +495,7 @@
       <div class="row">
 
         <div class="col-12">
-          <div class="business_title">
+          <div id="business_title" class="business_title">
             <p>
               業務專區
             </p>
@@ -850,7 +850,17 @@
 
     });
   </script>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
 
 
 </body>
