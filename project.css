@@ -218,7 +218,7 @@ nav {
 .show {
   opacity: 1;
   pointer-events: all;
- 
+
 }
 .swiper-container {
   width: 100%;
@@ -321,7 +321,9 @@ nav {
 .section3 {
   margin-top: 36px;
 }
-
+.banner_img{
+    width: 100%;
+}
 .ml7 .letter {
   transform-origin: 0 100%;
   display: inline-block;
@@ -339,18 +341,27 @@ td {
 .ticket {
   width: 100%;
 }
+
 .ticket_title {
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 36px;
   color: black;
-  display: inline-block;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  margin-left: 200px;
 }
-.ticket_title p {
-  margin: 0;
-}
+[data-aos="example-anim1"] {
+    transform: translateX(5px) translateY(10px);
+    opacity: 0;
+    transition-property: transform, opacity;
+  }
+  [data-aos="example-anim1"].aos-animate {
+    transform: skewX(0);
+    opacity: 1;
+  }
+
 .ticket_all {
   margin: auto;
   display: flex;
@@ -360,7 +371,8 @@ td {
 .search-movie {
   height: 601px;
   background-color: #2958A7;
-  margin-top: 87px;
+  margin-top: 82px;
+  margin-bottom: 36px;
 }
 .search-movie_title {
   padding-top: 160px;
@@ -390,7 +402,7 @@ td {
 .search_button{
   width: 100%;
   text-align: center;
-  
+
 }
 .submit {
   border: none;
@@ -403,6 +415,9 @@ td {
 /* 關於親親 */
 .section4{
   background-color: #1377B2;
+}
+.media_margin{
+    margin-top:50px;
 }
 .about_theater_content{
   overflow: hidden;
@@ -564,7 +579,7 @@ footer {
 .footer_text{
   height: 48px;
   padding: 0px 100px 0px 0px;
-  
+
 }
 .footer_logo img{
 width: 120px;
@@ -614,6 +629,9 @@ height: 100px;
   .map iframe{
     width: 600px;
   }
+  .media_margin{
+    margin-top:40px;
+}
 }
 @media (max-width: 1024px) {
   .nav_container {
@@ -628,7 +646,7 @@ height: 100px;
   .navbur {
     padding: 0 0 0 120px;
   }
- 
+
   .footer .logo {
     width: 80px;
     flex: 0 0 auto;
@@ -653,7 +671,7 @@ height: 100px;
   }
   .media-body p {
     font-size: 16px;
-    
+
   }
   .map iframe{
     width: 600px;
@@ -700,6 +718,9 @@ height: 100px;
   .map_text {
     margin: 0;
   }
+  .media_margin{
+    margin-top:30px;
+}
 }
 @media (max-width: 990px){
   .map iframe{
@@ -724,9 +745,12 @@ height: 100px;
   .media-body p {
     font-size: 14px;
   }
+  .media_margin{
+    margin-top:20px;
+}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbur {
     display: none;
   }
@@ -752,6 +776,7 @@ height: 100px;
     width: 300px;
     height: 250px;
   }
+
 }
 @media (max-width: 670px) {
   body{
@@ -788,7 +813,9 @@ height: 100px;
   .card_ma{
     margin-top:120px;
   }
-
+  .media_margin{
+    margin-top:10px;
+}
 }
 @media (max-width: 490px) {
   .map{
@@ -802,5 +829,8 @@ height: 100px;
 }
 .map_news{
   margin: 0;
+}
+.media_margin{
+    margin-top:5px;
 }
 }
