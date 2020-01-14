@@ -27,11 +27,11 @@
 
         <div class="navbur">
           <ul class="nav-content">
-            <li><a href="#movie">關於電影</a></li>
-            <li><a href="#ticket">票價資訊</a></li>
-            <li><a href="#about">關於親親</a></li>
-            <li><a href="#map">交通資訊</a></li>
-            <li><a href="#business_title">業務專區</a></li>
+            <li><a class="effect-underline" href="#movie">關於電影</a></li>
+            <li><a class="effect-underline" href="#ticket">票價資訊</a></li>
+            <li><a class="effect-underline" href="#about">關於親親</a></li>
+            <li><a class="effect-underline" href="#map">交通資訊</a></li>
+            <li><a class="effect-underline" href="#business_title">業務專區</a></li>
           </ul>
         </div>
         <div class="mobile_nav_toggle">
@@ -818,7 +818,6 @@
     });
     // product_swiper
     var swiper = new Swiper('.product_swiper', {
-      slidesPerView: 3,
       spaceBetween: 28,
       slidesPerGroup: 3,
       loop: true,
@@ -831,10 +830,27 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      breakpoints: {
+        
+        490: {
+          slidesPerView: 1,
+          spaceBetween: 28,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 28,
+        },
+  
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 28,
+        },
+
+
+      }
 
     });
     var swiper = new Swiper('.comming_swiper', {
-      slidesPerView: 3,
       spaceBetween: 28,
       slidesPerGroup: 3,
       loop: true,
@@ -847,6 +863,24 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      breakpoints: {
+        
+        490: {
+          slidesPerView: 1,
+          spaceBetween: 28,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 28,
+        },
+  
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 28,
+        },
+
+
+      }
 
     });
   </script>
