@@ -443,6 +443,9 @@ td {
 .section4{
   background-color: #1377B2;
 }
+.media{
+  margin-top: 20px;
+}
 .media_margin{
     margin-top:50px;
 }
@@ -477,8 +480,8 @@ td {
   color: rgb(212, 209, 41);
 }
 .media-body p {
-  line-height: 18px;
-  font-size: 18px;
+  line-height: 24px;
+  font-size: 24px;
   color:#f3faf2;
 }
 
@@ -698,7 +701,7 @@ height: 100px;
     color: rgb(205, 195, 50);
   }
   .media-body p {
-    font-size: 16px;
+    font-size: 21px;
 
   }
   .map iframe{
@@ -771,7 +774,7 @@ height: 100px;
     color: rgb(205, 195, 50);
   }
   .media-body p {
-    font-size: 14px;
+    font-size: 21px;
   }
   .media_margin{
     margin-top:20px;
@@ -798,7 +801,7 @@ height: 100px;
     color: rgb(205, 195, 50);
   }
   .media-body p {
-    font-size: 5px;
+    font-size: 21px;
   }
   .map iframe{
     width: 420px;
