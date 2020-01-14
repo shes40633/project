@@ -321,13 +321,13 @@
             </div>
             <div action="" class=form>
               <select name="" id="search" class=search>
-                <option value="">請選擇電影</option>
-                <option value="">野蠻遊戲</option>
+                <option class="options"id="noshow" value="請選擇電影" selected >請選擇電影</option>
+                <option class="options" value="野蠻遊戲">野蠻遊戲</option>
               </select>
             </div>
             <div class="search_button">
-              <button type="button" class="btn btn-primary submit">
-                熱門電影查詢
+              <button type="button" class="btn btn-primary submit"  id="sowmodal"data-toggle="modal" data-target="#exampleModalLong">
+                <span>熱門電影查詢</span>  
               </button>
             </div>
           </div>
@@ -784,6 +784,26 @@
   <script>
     var movies_title = document.querySelectorAll(".movies_title");
     var movie_live = document.querySelectorAll(".movie_live");
+    // var noshow = document.getElementById("noshow").value;
+//     var sowmodal = document.getElementById("sowmodal");
+//     var  value = document.querySelectorAll(".options");
+// console.log(value[0]);
+
+    $( "#search").change(function() {
+      console.log($("#search").val());
+      
+      if($("#search").val() == "請選擇電影"){
+        
+      // $('#sowmodal').css('display','none');
+      $('#sowmodal').hide();
+      }
+      else{
+        $('#sowmodal').show();
+      }
+
+ }  
+);
+
 
     function clear() {
       for (let i = 0; i < movies_title.length; i++) {
@@ -800,6 +820,8 @@
         movie_live[i].classList.add("show");
       }
     }
+
+ 
 
   </script>
 
